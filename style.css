@@ -12,7 +12,30 @@
 
 #story{
     width: 100%;
+    position: relative;
 }
+
+.controlls-container{
+    position: absolute;
+    border: 1px solid black;
+    right: 0;
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(2px);
+}
+
+.controlls-container .bx{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.controlls-container .bx:hover{
+    font-size: 30px;
+    transform: scale(1.1);
+    transition: 0.5s;
+    color: crimson;
+
+}
+
 
 #story .title{
     font-size: 6vh;
@@ -61,7 +84,7 @@
     width: 20vh;
     overflow: hidden;
     border: 3px solid #fff;
-     border-radius: 20px;
+     border-radius: 10px;
 }
 
 .right-story .image img{
