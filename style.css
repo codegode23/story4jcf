@@ -30,6 +30,11 @@
 
 .story-container .left-story{
     width: 50%;
+    padding: 10px;
+}
+
+.story-container .left-story h1{
+    margin-bottom: 3%;
 }
 
 .story-container .right-story{
