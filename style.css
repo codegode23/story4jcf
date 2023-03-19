@@ -17,23 +17,24 @@
 
 .controlls-container{
     position: absolute;
-    border: 1px solid black;
+    border: 2px solid crimson;
     right: 0;
     background: rgba(255,255,255,0.2);
     backdrop-filter: blur(2px);
+    z-index: 8;
+    border-radius: 4px;
 }
 
 .controlls-container .bx{
-    font-size: 30px;
+    font-size: 40px;
     cursor: pointer;
+    color: #333;
 }
 
 .controlls-container .bx:hover{
-    font-size: 30px;
     transform: scale(1.1);
     transition: 0.5s;
     color: crimson;
-
 }
 
 
@@ -60,7 +61,7 @@
     margin-bottom: 3%;
 }
 
-.story-container .right-story{
+.story-container .right-story.active{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -71,7 +72,19 @@
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
     scroll-behavior: smooth;
-    gap: 10px;
+    gap: 10px;animation: slideImage .6s linear;
+}
+
+
+@keyframes slideImage{
+    0%{
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+}
+
+.story-container .right-story{
+    display: none;
 }
 
 .story-container .right-story::-webkit-scrollbar{
@@ -106,14 +119,14 @@ transition: 0.5s;
     .story-container .left-story{
         width: 100%;
     }
-    .story-container .right-story{
+    .story-container .right-story.active{
         width: 100%;
     }
 }
 
 @media screen and (max-width:300px) {
 
-    .right-story{
+    .right-story.active{
         height: 70vh;
     }
     .right-story .image{
