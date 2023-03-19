@@ -1,3 +1,7 @@
+
+
+//Gallery
+
 let slides = document.querySelectorAll('.right-story');
 let index = 0;
 
@@ -15,3 +19,20 @@ function prev(){
     index = (index - 1 + slides.length) % slides.length;
     slides[index].classList.add('active');
 }
+
+//Video popup
+        let video = document.querySelectorAll('video');
+
+            video.forEach(play => play.addEventListener ('click', () => {
+
+            play.classList.toggle('active');
+
+            if(play.paused){
+                play.play();
+            }else{
+                play.pause();
+                play.currentTime = 0;
+            }
+            
+        }));
+
