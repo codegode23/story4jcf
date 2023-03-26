@@ -17,10 +17,12 @@
         <h1 class="title">Our Story</h1>
 
         <ul class="controls">
-            <li class="buttons active" data-filter="2020">2020</li>
+            <!-- <li class="buttons actives" data-filter="All">All</li> -->
+            <li class="buttons actives" data-filter="2020">2020</li>
             <li class="buttons" data-filter="2021">2021</li>
         </ul>
 
+        
         <div class="story-container 2020">
 
             <div class="left-story">
@@ -33,13 +35,15 @@
                     highest men did boy. Mistress sensible entirely am so. Quick can manor smart 
                     money hopes worth too.</p>
             </div>
+<!--             
             <div class="controlls-container">
                 <div id="prev" onclick="prev()"> <i class='bx bx-left-arrow'></i> </div>
                 <div id="next" onclick="next()"> <i class='bx bx-right-arrow'></i> </div>
-            </div>
-            
+            </div> -->
+         
+<!--             
             <div class="right-story active">
-                <!----Images-->
+              
                 <a href="img/girl2.jpg" data-lightbox="models" class="image" >
                     <img src="img/girl2.jpg">
                 </a>
@@ -90,7 +94,7 @@
 
 
             <div class="right-story">
-                <!-----Videos-->
+               
                 <div class="videos">
                     <video src="vids/hm1.mp4"></video>
                 </div>
@@ -114,7 +118,9 @@
                 </div>
                
 
-            </div>
+            </div> -->
+
+
 
         </div>
 
@@ -130,13 +136,14 @@
                     highest men did boy. Mistress sensible entirely am so. Quick can manor smart 
                     money hopes worth too.</p>
             </div>
-            <div class="controlls-container">
+            
+            <!-- <div class="controlls-container">
                 <div id="prev" onclick="prev()"> <i class='bx bx-left-arrow'></i> </div>
                 <div id="next" onclick="next()"> <i class='bx bx-right-arrow'></i> </div>
-            </div>
-            
+            </div> -->
+<!--             
             <div class="right-story active">
-                <!----Images-->
+            
                 <a href="img/girl2.jpg" data-lightbox="models" class="image" >
                     <img src="img/girl2.jpg">
                 </a>
@@ -187,7 +194,7 @@
 
 
             <div class="right-story">
-                <!-----Videos-->
+             
                 <div class="videos">
                     <video src="vids/hm1.mp4"></video>
                 </div>
@@ -211,10 +218,11 @@
                 </div>
                
 
-            </div>
+            </div> -->
 
+    
         </div>
-
+     
 
     </section>
 
@@ -234,15 +242,15 @@
 
     $(".buttons").click(function(){
 
-        $(this).addClass('active').siblings().removeClass('active');
+        $(this).addClass('actives').siblings().removeClass('actives');
 
         var filter = $(this).attr('data-filter');
 
         if(filter == '2020'){
-            $('.2021').show(400);
+            $('.story-container').show(400);
         }else{
-            $('.2021').not('.'+filter).hide(200);
-            $('.2021').filter('.'+filter).show(400);
+            $('.story-container').not('.'+filter).hide(200);
+            $('.story-container').filter('.'+filter).show(400);
         }
     });
 });

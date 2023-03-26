@@ -62,7 +62,7 @@
     margin: auto;
 }
 
-#story .controls .buttons.active{
+#story .controls .buttons.actives{
     color: rgb(231, 68, 68);
     font-size: 40px;
     border-left: 4px solid crimson;
