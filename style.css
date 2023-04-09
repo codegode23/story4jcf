@@ -100,12 +100,20 @@
     }
 }
 
+
 #places{
     width: 100%;
     margin-top: 3%;
 }
 
 .places{
+    display: none;
+    transition: .6s;
+    /* justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; */
+}
+.places.active{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -113,7 +121,7 @@
 }
 
 .places .left-place{
-    width: 40%;
+    width: 43%;
     height: 500px;
     position: relative;
     display: flex;
@@ -142,10 +150,10 @@
     margin-top: 2%;
     background-color: crimson;
     position: absolute;
-    left: -120px;
+    left: -100px;
     top: 50%;
     transform: rotate(90deg);
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 400;
 }
 
@@ -165,8 +173,8 @@
 }
 
 .right-place p{
-    padding: 1rem;
-    border-left: 1px solid rgb(247, 62, 62);
+    padding: .6rem;
+    border-left: 4px solid rgb(247, 62, 62);
     line-height: 30px;
 }
 
@@ -192,6 +200,32 @@
     }
 }
 @media screen and (max-width: 300px) {
+
+    
+.places .left-place{
+    width: 70%;
+    height: 200px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.left-place .gallery{
+    padding: 15px 40px;
+    border-radius: 1px;
+    cursor: pointer;
+    color: #fff;
+    transition: .5s;
+    margin-top: 2%;
+    background-color: crimson;
+    position: absolute;
+    left: -50px;
+    top: 50%;
+    transform: rotate(90deg);
+    font-size: 12px;
+    font-weight: 400;
+}
     
 .right-place h1{
     font-size: 30px;
@@ -306,4 +340,46 @@ pictures1 .close:hover{
     height: 20vh;
     width: 14vh;
 }
+}
+
+
+.dates{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-top: 1%;
+    margin-bottom: 5%;
+    padding: 1rem;
+    overflow-x: scroll;
+}
+
+.dates .date{
+    cursor: pointer;
+    transition: .4s;
+    position: relative;
+}
+
+.dates .date:before{
+    content: "";
+    position: absolute;
+    background: rgb(231, 68, 68);
+    width: 0;
+    height: 3px;
+    bottom: -15%;
+    left: 10px;
+    transition: 0.5s ease;
+}
+
+.dates .date.active{
+    color: red;
+    font-size: 28px;
+}
+
+.dates .date.active:before{
+    width: 50%;
+}
+
+.dates .date:hover{
+    color: red;
 }
