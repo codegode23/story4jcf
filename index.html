@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="css/lightbox.css">
+     <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 </head>
 <body>
 
@@ -21,7 +23,7 @@
         <div class="story-content">
             <div class="left-story">
 
-                <div class="lf-image"><img src="vol.jpg" alt=""></div>
+                <div class="lf-image"><img src="./img/vol.jpg" alt=""></div>
                 
             </div>
 
@@ -50,8 +52,8 @@
     <section class="places" id="places">
 
         <div class="left-place">
-            <img src="vol.jpg" alt="">
-            <h3 class="gallery">Explore</h3>
+            <img src="./img/vol.jpg" alt="">
+            <h3 class="gallery" id="gallery">Gallery</h3>
         </div>
 
         <div class="right-place">
@@ -64,18 +66,54 @@
                 sunt animi sapiente facere.</p>
         </div>
 
-        <div class="pitures">
-            
+        <div class="pictures1">
+
+            <div class="close bx bx-x" id="close"></div>
+
+            <a href="./img/girl2.jpg" data-lightbox="models" class="image" >
+                <img src="./img/girl2.jpg">
+            </a>
+            <a href="./img/girl2.jpg" data-lightbox="models" class="image">
+                <img src="./img/girl2.jpg">
+            </a>
+            <a href="./img/girl2.jpg" data-lightbox="models" class="image">
+                <img src="./img/girl2.jpg">
+           
+            <a href="./img/girl2.jpg" data-lightbox="models" class="image" >
+                <img src="./img/girl2.jpg">
+            </a>
+
+            <div class="videos">
+                <video src="vids/hm1.mp4"></video>
+            </div>
+
+            <div class="videos">
+                <video src="vids/hm1.mp4"></video>
+            </div>
+
+            </a>
+            <a href="./img/Group 10.png" data-lightbox="models" class="image">
+                <img src="./img/Group 10.png">
+            </a>
+            <a href="./img/vol.jpg" data-lightbox="models" class="image">
+                <img src="./img/vol.jpg">
+            </a>
+
+            <div class="videos">
+                <video src="vids/hm2.mp4"></video>
+            </div>
+
+            <div class="videos">
+                <video src="vids/hm1.mp4"></video>
+            </div>
+
         </div>
 
     </section>
 
-    <div class="gallery1">
-        <div class="gallery-container">
-            
-        </div>
-    </div>
-
+   
     
+    <script src="./js/lightbox-plus-jquery.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>

@@ -205,3 +205,105 @@
 }
 
 }
+
+
+/*Pictures pop-up*/
+
+/*Close button*/
+
+.pictures1 .close{
+    position: absolute;
+    top: 2px;
+    right: 0;
+    padding: 5px 5px;
+    cursor: pointer;
+    font-size: 30px;
+    background: linear-gradient(45deg, #db1c0e, #f01e17);
+    border-radius: 4px;
+    color: #fff;
+    transition: .5s;
+}
+
+pictures1 .close:hover{
+    background: linear-gradient(45deg, #eb7971, #df706c);
+}
+
+.pictures1.active{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100vh;
+    background: rgba(236, 139, 139, 0.4);
+    backdrop-filter: blur(3px);
+    top: 0;
+    left: 0;
+    text-align: center;
+    transition: all .5s;
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    scroll-behavior: smooth;
+    gap: 5px;
+    animation: slideImage .6s linear;
+}
+
+.pictures1{
+    display: none;
+}
+
+@keyframes slideImage{
+    0%{
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+}
+
+
+.pictures1 .image,
+.pictures1 .videos{
+    height: 43vh;
+    width: 40vh;
+    overflow: hidden;
+    border: 1px solid #fff;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.pictures1 .image img,
+.pictures1 .videos video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.pictures1 .videos .active
+{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    width: 80%;
+    box-shadow: 0 0 0 100vh rgba(0,0,0,.7);
+    z-index: 1;
+}
+
+
+@media screen and (max-width: 600px) {
+    .pictures1 .image,
+.pictures1 .videos{
+    height: 28vh;
+    width: 20vh;
+}
+}
+
+@media screen and (max-width: 330px) {
+    .pictures1 .image,
+.pictures1 .videos{
+    height: 20vh;
+    width: 14vh;
+}
+}
