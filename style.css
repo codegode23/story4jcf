@@ -8,29 +8,7 @@
     font-family: 'Lato', sans-serif
 }
 
-#home{
-    width: 100%;
-    
-}
 
-.home{
-    border: 1px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    min-height: 80vh;
-    background-image: url(vol.jpg);
-    background-position: center;
-    background-size: cover;
-    position: relative;
-}
-
-.words{
-    margin: 0;
-    position: absolute;               
-    bottom: 0%;  
-}
 
 #story{
     width: 100%;
