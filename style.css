@@ -139,6 +139,7 @@
     width: 100%;
    height: 100%;
     object-fit: cover;
+    transition: all .5s;
 }
 
 .left-place .gallery{
@@ -353,6 +354,8 @@ pictures1 .close:hover{
     padding: 1rem;
     overflow-x: scroll;
 }
+
+
 
 .dates .date{
     cursor: pointer;

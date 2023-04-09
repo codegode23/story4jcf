@@ -52,3 +52,19 @@ btn.addEventListener("click", () =>{
     sliderNav(i);
 });
 });
+
+
+/*=========gsap animation========*/
+
+const controlPlaces = document.querySelectorAll('.date');
+
+function ScrollAnimation(){
+    gsap.from('.location', {opacity: 0, duration: .2, delay: .2, y:-20})
+    gsap.from('.gallery', {opacity: 0, duration: .3, delay: .1, y:-20})
+    gsap.from('.plimage', {opacity: 0, duration: .3, delay: .1, y:20})
+    gsap.from('.loc-info', {opacity: 0, duration: .4, delay: .4, y:-20})
+    
+
+}
+
+controlPlaces.forEach(c => c.addEventListener('click', ScrollAnimation))
