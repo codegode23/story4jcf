@@ -45,7 +45,7 @@
 }
 
 .left-story{
-    width: 40%;
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,11 +54,9 @@
 
 .left-story .lf-image{
     width: 100%;
-    max-width: 330px;
+    max-width: 630px;
     height: 500px;
     overflow: hidden;
-    border: 3px solid #eee;
-    border-radius: 10px;
 }
 
 .left-story .lf-image img{
@@ -68,12 +66,18 @@
 }
 
 .right-story{
-    width: 60%;
+    width: 50%;
     padding: 1rem;
 }
 
+.right-story .right-content h1{
+    font-size: 40px;
+    padding: .6rem;
+    font-weight: 400;
+}
+
 .right-story p{
-    font-size: 20px;
+    line-height: 25px;
 }
 
 @media screen and (max-width:700px) {
@@ -95,8 +99,6 @@
         max-width: 400px;
         height: 300px;
         overflow: hidden;
-        border: 3px solid #eee;
-        border-radius: 10px;
     }
 }
 
@@ -171,6 +173,7 @@
 .right-place h1{
     font-size: 40px;
     padding: 1rem;
+    font-weight: 400;
 }
 
 .right-place p{
@@ -246,7 +249,9 @@
 
 /*Close button*/
 
-.pictures1 .close{
+.pictures1 .close1,
+.pictures2 .close2,
+.pictures3 .close3{
     position: absolute;
     top: 2px;
     right: 0;
@@ -259,11 +264,15 @@
     transition: .5s;
 }
 
-pictures1 .close:hover{
+pictures1 .close1:hover,
+pictures2 .close2:hover,
+pictures3 .close3:hover{
     background: linear-gradient(45deg, #eb7971, #df706c);
 }
 
-.pictures1.active{
+.pictures1.active,
+.pictures2.active,
+.pictures3.active{
     position: fixed;
     display: flex;
     align-items: center;
@@ -285,7 +294,9 @@ pictures1 .close:hover{
     animation: slideImage .6s linear;
 }
 
-.pictures1{
+.pictures1,
+.pictures2,
+.pictures3{
     display: none;
 }
 
@@ -298,7 +309,11 @@ pictures1 .close:hover{
 
 
 .pictures1 .image,
-.pictures1 .videos{
+.pictures1 .videos,
+.pictures2 .image,
+.pictures2 .videos,
+.pictures3 .image,
+.pictures3 .videos{
     height: 43vh;
     width: 40vh;
     overflow: hidden;
@@ -308,13 +323,19 @@ pictures1 .close:hover{
 }
 
 .pictures1 .image img,
-.pictures1 .videos video{
+.pictures1 .videos video,
+.pictures2 .image img,
+.pictures2 .videos video,
+.pictures3 .image img,
+.pictures3 .videos video{
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-.pictures1 .videos .active
+.pictures1 .videos .active,
+.pictures2 .videos .active,
+.pictures3 .videos .active
 {
     position: fixed;
     top: 50%;
@@ -329,7 +350,11 @@ pictures1 .close:hover{
 
 @media screen and (max-width: 600px) {
     .pictures1 .image,
-.pictures1 .videos{
+    .pictures1 .videos,
+    .pictures2 .image,
+    .pictures2 .videos,
+    .pictures3 .image,
+    .pictures3 .videos{
     height: 28vh;
     width: 20vh;
 }
@@ -337,7 +362,11 @@ pictures1 .close:hover{
 
 @media screen and (max-width: 330px) {
     .pictures1 .image,
-.pictures1 .videos{
+    .pictures1 .videos,
+    .pictures2 .image,
+    .pictures2 .videos,
+    .pictures3 .image,
+    .pictures3 .videos{
     height: 20vh;
     width: 14vh;
 }
