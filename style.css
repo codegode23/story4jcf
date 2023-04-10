@@ -16,25 +16,21 @@
 
 .story-content{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
     margin-top: 5%;
-    gap: 6px;
+    gap: 4px;
 }
 
 .left-story{
     width: 50%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
     position: relative;
 }
 
 .left-story .lf-image{
     width: 100%;
     max-width: 630px;
-    height: 500px;
-    overflow: hidden;
 }
 
 .left-story .lf-image img{
@@ -45,12 +41,12 @@
 
 .right-story{
     width: 50%;
-    padding: 1rem;
+    padding: .4rem;
 }
 
 .right-story .right-content h1{
     font-size: 40px;
-    padding: .6rem;
+    padding: .3rem;
     font-weight: 400;
 }
 
@@ -58,7 +54,7 @@
     line-height: 25px;
 }
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:765px) {
     .story-content{
         flex-direction: column-reverse;
     }
@@ -72,11 +68,7 @@
     }
 
     .left-story .lf-image{
-       
         width: 100%;
-        max-width: 400px;
-        height: 300px;
-        overflow: hidden;
     }
 }
 
@@ -95,14 +87,12 @@
 }
 .places.active{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
 .places .left-place{
     width: 43%;
-    height: 500px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -161,18 +151,20 @@
 }
 
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 765px) {
     .places{
        flex-direction: column;
+       justify-content: center;
+       align-items: center;
     }
 
     .places .left-place{
-        width: 60%;
+        width: 70%;
         height: 300px;
     }
 
     .left-place .gallery{
-        padding: 15px 60px;
+        padding: 15px 55px;
         font-size: 15px;
         left: -100px;
     }
@@ -180,13 +172,14 @@
     .places .right-place{
         width: 100%;
     }
+
 }
 @media screen and (max-width: 300px) {
 
     
 .places .left-place{
-    width: 70%;
-    height: 200px;
+    width: 80%;
+    height: 250px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -392,4 +385,173 @@ pictures3 .close3:hover{
 
 .dates .date:hover{
     color: red;
+}
+
+
+
+/*About Section Starts*/
+
+#about{
+    width: 100%;
+}
+
+.abt-title{
+    padding: .6rem;
+}
+
+.abt-title h4{
+    color: #db1c0e;
+    margin-bottom: 1%;
+}
+
+.abt-title h2{
+    font-weight: 400;
+    line-height: 29px;
+}
+
+.abt-title span{
+    font-weight: 600;
+    color: #db1c0e;
+}
+
+.abt-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.abt-container .abt-left{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 16px;
+    padding: .6rem;
+}
+
+.abt-container .abt-left h4{
+    border-left: 3px solid #db1c0e;
+    padding: .6rem;
+    line-height: 25px;
+}
+
+.abt-container .abt-left p{
+    padding: .6rem;
+    line-height: 25px;
+}
+
+.abt-container .abt-left .abt-extra{
+    display: flex;
+    justify-content: center;
+}
+
+.abt-container .abt-left .abt-extra p{
+    width: 50%;
+}
+
+@media screen and (max-width: 765px) {
+    
+    .abt-container{
+        flex-direction: column;
+    }
+
+.abt-container .abt-left{
+    width: 100%;
+    gap: 16px;
+    padding: .2rem;
+}
+
+
+.abt-container .abt-left .abt-extra{
+    flex-direction:column;
+}
+
+
+.abt-container .abt-left .abt-extra p{
+    width: 100%;
+}
+
+.abt-title{
+    padding: .2rem;
+}
+
+.abt-title h4{
+    color: #db1c0e;
+    margin-bottom: 1%;
+}
+
+.abt-title h2{
+    font-weight: 300;
+}
+
+.abt-container .abt-left h4{
+    padding: .4rem;
+}
+
+.abt-container .abt-left p{
+    padding: .2rem;
+}
+}
+
+@media screen and (max-width: 400px) {
+    
+.abt-container .abt-left{
+    width: 100%;
+    gap: 16px;
+    padding: .2rem;
+}
+
+
+.abt-title{
+    padding: .2rem;
+}
+
+.abt-title h2{
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.abt-container .abt-left h4{
+    padding: .4rem;
+    font-size: 15px;
+}
+
+.abt-container .abt-left p{
+    padding: .1srem;
+    font-size: 14px;
+}
+}
+
+
+.abt-right{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+
+}
+
+.abt-right .abtr-image{
+    width: 100%;
+    max-width: 200px;
+    height: 300px;
+    border-radius: 30px;
+}
+
+.abt-right .abtr-image1{
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+}
+
+.abt-right .abtr-image img,
+.abt-right .abtr-image1 img{
+height: 100%;
+width: 100%;
+object-fit: cover;
+}
+
+@media screen and (max-width: 765px) {
+    .abt-right{
+        width: 100%;
+    }
 }
