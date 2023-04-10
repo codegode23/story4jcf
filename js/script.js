@@ -85,7 +85,7 @@ const controlPlaces = document.querySelectorAll('.date');
 
 function ScrollAnimation(){
     gsap.from('.location', {opacity: 0, duration: .2, delay: .2, y:-20})
-    gsap.from('.gallery', {opacity: .5, duration: .3, delay: .1, y:-20})
+    // gsap.from('.gallery', {opacity: .5, duration: .3, delay: .1, y:-20})
     gsap.from('.plimage', {opacity: 1, duration: .3, delay: .1, y:20})
     gsap.from('.loc-info', {opacity: 0, duration: .2, delay: .2, y:-20})
     
