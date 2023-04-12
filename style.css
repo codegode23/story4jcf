@@ -9,6 +9,12 @@
     font-family: 'Poppins', sans-serif;
 }
 
+section{
+   
+    padding: 1.3rem 4%;   
+}
+
+
 
 #story{
     width: 100%;
@@ -16,58 +22,47 @@
 
 .story-content{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     margin-top: 5%;
-    gap: 4px;
+    gap: 10px;
 }
 
-.left-story{
-    width: 50%;
-    display: flex;
-    justify-content: space-evenly;
-    position: relative;
-}
-
-.left-story .lf-image{
+.story-content img{
     width: 100%;
-    max-width: 630px;
+    max-width: 530px;
 }
 
-.left-story .lf-image img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
 
 .right-story{
     width: 50%;
     padding: .4rem;
 }
 
-.right-story .right-content h1{
+.right-story h1{
     font-size: 40px;
-    padding: .3rem;
+    padding: 1rem;
     font-weight: 400;
+    color: #f11d1d;
 }
 
 .right-story p{
-    line-height: 25px;
+    line-height: 28px;
+    color: #3f3737;
+    font-size: 1rem;
+    padding: .1px;
 }
 
-@media screen and (max-width:930px) {
+@media screen and (max-width:960px) {
     .story-content{
-        flex-direction: column-reverse;
+        flex-direction: column;
+        align-items: center;
     }
 
     .right-story{
         width: 100%;
     }
 
-    .left-story{
-        width: 100%;
-    }
-
-    .left-story .lf-image{
+    .story-content img{
         width: 100%;
     }
 }
@@ -242,14 +237,20 @@
     }
 
     .places .right-place{
-        margin-top: 8%;
+        margin-top: 10%;
+        padding: .4rem;
     }
 
+.right-place p{
+    padding: .2rem;
+    border-left: 4px solid rgb(247, 62, 62);
+    line-height: 30px;
+}
 
 }
 
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 330px) {
 
     
 .places .left-place{
@@ -276,6 +277,11 @@
     font-size: 12px;
     font-weight: 400;
 }
+
+.places .right-place{
+    margin-top: 15%;
+    padding: .1rem;
+}
     
 .right-place h1{
     font-size: 30px;
@@ -283,13 +289,13 @@
 }
 
 .right-place p{
-    padding: .5rem;
+    padding: .1rem;
     border-left: 1px solid rgb(247, 62, 62);
     line-height: 30px;
 }
 
 .dates{
-    top: 36%;
+    top: 40%;
 }
 
 }
@@ -480,15 +486,15 @@ pictures3 .close3:hover{
     padding: .6rem;
     line-height: 25px;
 }
-
+/* 
 .abt-container .abt-left .abt-extra{
     display: flex;
     justify-content: center;
-}
-
+} */
+/* 
 .abt-container .abt-left .abt-extra p{
     width: 50%;
-}
+} */
 
 @media screen and (max-width: 930px) {
     
