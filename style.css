@@ -1,13 +1,13 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+@import url('https://fonts.googlepis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lato', sans-serif
+    font-family: 'Poppins', sans-serif;
 }
-
 
 
 #story{
@@ -432,6 +432,11 @@ pictures3 .close3:hover{
     width: 100%;
 }
 
+.about{
+    display: flex;
+    flex-direction: column;
+}
+
 .abt-title{
     padding: .6rem;
 }
@@ -591,4 +596,86 @@ object-fit: cover;
     .abt-right{
         width: 100%;
     }
+}
+
+
+.extra-info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    gap: 20px;
+}
+
+.extra-info .abt-mission,
+.extra-info .abt-vission{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    gap: 16px;
+}
+
+.extra-info .abt-mission .mis-title,
+.extra-info .abt-vission .vis-title{
+    padding: .4rem;
+    font-size: 30px;
+}
+
+.abt-mission .mis-left,
+.abt-vission .vis-left{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+    padding: 1rem;
+    width: 50%;
+}
+
+.abt-mission img,
+.abt-vission img{
+    width: 100%;
+    max-width: 470px;
+    height: 490px;
+}
+
+.abt-mission .mis-left p,
+.abt-vission .vis-left p{
+    line-height: 30px;
+    padding: .4rem;
+}
+
+
+@media screen and (max-width: 860px) {
+    
+.extra-info .abt-mission{
+    flex-direction: column;
+    align-items: center;
+}
+.extra-info .abt-vission{
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+
+.abt-mission .mis-left,
+.abt-vission .vis-left{
+    width: 100%;
+}
+
+
+.abt-mission img,
+.abt-vission img{
+    max-width: 370px;
+    height: 390px;
+    text-align: center;
+}
+}
+
+
+@media screen and (max-width: 400px) {
+    .abt-mission img,
+    .abt-vission img{
+    max-width: 260px;
+    height: 290px;
+}
 }
