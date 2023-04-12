@@ -618,7 +618,7 @@ object-fit: cover;
 
 .extra-info .abt-mission .mis-title,
 .extra-info .abt-vission .vis-title{
-    padding: .4rem;
+    padding: 1rem;
     font-size: 30px;
 }
 
@@ -631,6 +631,13 @@ object-fit: cover;
     width: 50%;
 }
 
+.abt-mission .mis-left h3,
+.abt-vission .vis-left h3{
+    color: #f11d1d;
+    font-size: 2rem;
+    letter-spacing: 3px;
+}
+
 .abt-mission img,
 .abt-vission img{
     width: 100%;
@@ -640,8 +647,10 @@ object-fit: cover;
 
 .abt-mission .mis-left p,
 .abt-vission .vis-left p{
-    line-height: 30px;
-    padding: .4rem;
+    line-height: 26px;
+    color: #3f3737;
+    font-size: 1rem;
+    padding: 1rem;
 }
 
 
