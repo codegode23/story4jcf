@@ -19,6 +19,9 @@ section{
     padding: 1.3rem 4%;   
 }
 
+body{
+    background-color: #fff;
+}
 
 
 #story{
@@ -621,6 +624,7 @@ object-fit: cover;
     flex-direction: column;
     margin-top: 5%;
     gap: 20px;
+    background-color: #eee;
 }
 
 .extra-info .abt-mission,
@@ -737,7 +741,7 @@ object-fit: cover;
 /*left reaveal*/
 .reveal-left{
     position: relative;
-    transform: translateX(150px);
+    transform: translateX(-150px);
     opacity: 0;
     transition: all 3s ease;
 }
@@ -750,7 +754,7 @@ object-fit: cover;
 /*Right reaveal*/
 .reveal-right{
     position: relative;
-    transform: translateX(-150px);
+    transform: translateX(150px);
     opacity: 0;
     transition: all 2s ease;
 }
