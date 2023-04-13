@@ -2,13 +2,17 @@
 
 @import url('https://fonts.googlepis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+    /* font-family: 'Inter', sans-serif; */
+    /* font-family: 'Ubuntu', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
 }
 
 section{
@@ -48,7 +52,7 @@ section{
 
 .right-story p{
     line-height: 28px;
-    color: #3f3737;
+    color: #1a1717;
     font-size: 1rem;
     padding: .1px;
 }
@@ -143,7 +147,7 @@ section{
     padding: .6rem;
     border-left: 4px solid rgb(247, 62, 62);
     line-height: 28px;
-    color: #3f3737;
+    color: #1a1717;
     font-size: 1rem;
 }
 
@@ -653,13 +657,13 @@ object-fit: cover;
 .abt-vission img{
     width: 100%;
     max-width: 470px;
-    height: 490px;
+    height: 470px;
 }
 
 .abt-mission .mis-left p,
 .abt-vission .vis-left p{
     line-height: 26px;
-    color: #3f3737;
+    color: #1a1717;
     font-size: 1rem;
     padding: 1rem;
 }
