@@ -445,6 +445,7 @@ pictures3 .close3:hover{
 
 #about{
     width: 100%;
+    overflow-x: hidden;
 }
 
 .about{
@@ -702,4 +703,59 @@ object-fit: cover;
     max-width: 260px;
     height: 290px;
 }
+}
+
+
+
+/* 
+@keyframes FadeInUp {
+	0% {
+		transform:translateY(15px);
+		opacity:0;
+	}
+	
+	100% {
+		transform:translateY(0px);
+		opacity:1;
+	}
+}  */
+
+/*Top reaveal*/
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 3s ease;
+}
+
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+
+/*left reaveal*/
+.reveal-left{
+    position: relative;
+    transform: translateX(150px);
+    opacity: 0;
+    transition: all 3s ease;
+}
+
+.reveal-left.active{
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+/*Right reaveal*/
+.reveal-right{
+    position: relative;
+    transform: translateX(-150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.reveal-right.active{
+    transform: translateX(0px);
+    opacity: 1;
 }
