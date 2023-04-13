@@ -2,15 +2,16 @@
 
 @import url('https://fonts.googlepis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 section{
-   
     padding: 1.3rem 4%;   
 }
 
@@ -113,7 +114,7 @@ section{
     color: #fff;
     transition: .5s;
     margin-top: 2%;
-    background-color: crimson;
+    background-color: #f55353;
     position: absolute;
     left: -100px;
     top: 50%;
@@ -141,7 +142,9 @@ section{
 .right-place p{
     padding: .6rem;
     border-left: 4px solid rgb(247, 62, 62);
-    line-height: 30px;
+    line-height: 28px;
+    color: #3f3737;
+    font-size: 1rem;
 }
 
 .dates{
@@ -173,7 +176,7 @@ section{
 }
 
 .dates .date.active{
-    color: red;
+    color: #f11d1d;
     font-size: 28px;
 }
 
@@ -182,7 +185,7 @@ section{
 }
 
 .dates .date:hover{
-    color: red;
+    color: #f11d1d;
 }
 
 
