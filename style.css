@@ -90,59 +90,24 @@ body{
 .places.active{
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap;
+    gap: 16px;
 }
 
-.places .left-place{
-    width: 43%;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-}
 
-/* .places .left-place .lp-image{
+.places img{
     width: 100%;
-    max-width: 480px;
-    height: 500px;
-    border-radius: 4px;
-} */
-
-.places .left-place img{
-    width: 100%;
-   height: 100%;
-    object-fit: cover;
-    transition: all .5s;
+    max-width: 490px;
+    box-shadow: -1.4rem -1.3rem .7rem  rgba(197, 134, 134, 0.3);
 }
-
-.left-place .gallery{
-    padding: 15px 80px;
-    border-radius: 1px;
-    cursor: pointer;
-    color: #fff;
-    transition: .5s;
-    margin-top: 2%;
-    background-color: #f55353;
-    position: absolute;
-    left: -100px;
-    top: 50%;
-    transform: rotate(90deg);
-    font-size: 14px;
-    font-weight: 400;
-}
-
-.left-place .gallery:hover{
-    color: aliceblue;
-    background-color: rgb(119, 5, 28);
-}
-
 .places .right-place{
-    width: 50%;
-    padding: 1rem;
+    width: 70%;
+    padding: .6rem;
+    gap: 15px;
 }
 
 .right-place h1{
     font-size: 40px;
-    padding: 1rem;
+    padding: .5rem;
     font-weight: 400;
 }
 
@@ -154,21 +119,49 @@ body{
     font-size: 1rem;
 }
 
+
+.right-place .gallery{
+    display: inline-flex;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    background-color:rgba(206, 25, 25, 0.829);
+    backdrop-filter: blur(2px);
+    color: #fff;
+    border-radius: .5rem;
+    font-weight: 400;
+    cursor: pointer;
+    margin-top: 5%;
+}
+
+
+.right-place .gallery:hover{
+    color: fff;
+    background-color: rgb(160, 31, 31);
+}
+
+
 .dates{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 12px;
-    margin-top: 1%;
-    margin-bottom: 5%;
     padding: 1rem;
     overflow-x: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.dates::-webkit-scrollbar{
+    -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+
 }
 
 .dates .date{
     cursor: pointer;
     transition: .4s;
     position: relative;
+    font-size: 14px;
 }
 
 .dates .date:before{
@@ -184,7 +177,7 @@ body{
 
 .dates .date.active{
     color: #f11d1d;
-    font-size: 28px;
+    font-size: 25px;
 }
 
 .dates .date.active:before{
@@ -207,7 +200,7 @@ body{
        align-items: center;
        position: relative;
     }
-
+/* 
     .places .left-place{
         width: 70%;
         height: 300px;
@@ -218,16 +211,31 @@ body{
         padding: 15px 55px;
         font-size: 15px;
         left: -100px;
-    }
+    } */
 
     .places .right-place{
         width: 100%;
         margin-top: 5%;
+        padding: .1rem;
+        gap: 15px;
     }
 
+    
+.right-place h1{
+    font-size: 30px;
+    padding: .3rem;
+}
+    .right-place p{
+    padding: .6rem;
+    border-left: 4px solid rgb(247, 62, 62);
+    line-height: 28px;
+    color: #1a1717;
+    font-size: 1.1rem;
+}
+/* 
     .dates{
         position: absolute;
-        top: 56%;
+        top: 43%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -235,28 +243,39 @@ body{
         padding: .2rem;
         overflow-x: scroll;
         width: 90%;
-        background: rgba(255,255,255,0.2);
+        background: rgba(255,255,255,0.8);
         backdrop-filter: blur(2px);
-    }
+    } */
 
 }
 
 
-@media screen and (max-width: 564px) {
-    .dates{
-        top: 46%;
-        background: #fff;
-    }
+@media screen and (max-width: 462px) {
+    /* .dates{
+        top: 28%;
+    } */
 
     .places .right-place{
         margin-top: 10%;
         padding: .4rem;
     }
 
+   
+.right-place h1{
+    font-size: 26px;
+}
+    
 .right-place p{
     padding: .2rem;
     border-left: 4px solid rgb(247, 62, 62);
-    line-height: 30px;
+    line-height: 22px;
+    font-size: .9rem;
+}
+
+
+.right-place .gallery{
+    padding: 1rem .5rem;
+    font-size: 15px;
 }
 
 }
@@ -264,51 +283,6 @@ body{
 
 @media screen and (max-width: 330px) {
 
-    
-.places .left-place{
-    width: 80%;
-    height: 250px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-}
-
-
-.left-place .gallery{
-    padding: 15px 40px;
-    border-radius: 1px;
-    cursor: pointer;
-    color: #fff;
-    transition: .5s;
-    margin-top: 2%;
-    background-color: crimson;
-    position: absolute;
-    left: -50px;
-    top: 50%;
-    transform: rotate(90deg);
-    font-size: 12px;
-    font-weight: 400;
-}
-
-.places .right-place{
-    margin-top: 15%;
-    padding: .1rem;
-}
-    
-.right-place h1{
-    font-size: 30px;
-    padding: .3rem;
-}
-
-.right-place p{
-    padding: .1rem;
-    border-left: 1px solid rgb(247, 62, 62);
-    line-height: 30px;
-}
-
-.dates{
-    top: 40%;
-}
 
 }
 
@@ -623,8 +597,8 @@ object-fit: cover;
     display: flex;
     flex-direction: column;
     margin-top: 5%;
-    gap: 20px;
-    background-color: #eee;
+    gap: 10px;
+    background-color: #fdfcfc;
 }
 
 .extra-info .abt-mission,
@@ -633,13 +607,14 @@ object-fit: cover;
     display: flex;
     justify-content: center;
     margin-top: 3%;
-    gap: 16px;
+    gap: 10px;
 }
 
 .extra-info .abt-mission .mis-title,
 .extra-info .abt-vission .vis-title{
-    padding: 1rem;
-    font-size: 30px;
+    padding: .7rem;
+    font-size: 20px;
+    color: #f11d1d;
 }
 
 .abt-mission .mis-left,
@@ -647,30 +622,29 @@ object-fit: cover;
     display: flex;
     flex-direction: column;
     margin-top: 3%;
-    padding: 1rem;
+    padding: .5rem;
     width: 50%;
 }
 
-.abt-mission .mis-left h3,
+/* .abt-mission .mis-left h3,
 .abt-vission .vis-left h3{
     color: #f11d1d;
-    font-size: 2rem;
-    letter-spacing: 3px;
-}
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+} */
 
 .abt-mission img,
 .abt-vission img{
     width: 100%;
-    max-width: 470px;
-    height: 470px;
+    max-width: 480px;
 }
 
 .abt-mission .mis-left p,
 .abt-vission .vis-left p{
-    line-height: 26px;
+    line-height: 22px;
     color: #1a1717;
     font-size: 1rem;
-    padding: 1rem;
+    padding: .7rem;
 }
 
 
@@ -689,25 +663,26 @@ object-fit: cover;
 .abt-mission .mis-left,
 .abt-vission .vis-left{
     width: 100%;
+    padding: .8rem;
 }
 
-
+/* 
 .abt-mission img,
 .abt-vission img{
     max-width: 370px;
     height: 390px;
     text-align: center;
-}
+} */
 }
 
-
+/* 
 @media screen and (max-width: 400px) {
     .abt-mission img,
     .abt-vission img{
     max-width: 260px;
     height: 290px;
 }
-}
+} */
 
 
 
