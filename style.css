@@ -232,7 +232,7 @@ body{
     color: #1a1717;
     font-size: 1.1rem;
 }
-/* 
+
     .dates{
         position: absolute;
         top: 43%;
@@ -245,15 +245,15 @@ body{
         width: 90%;
         background: rgba(255,255,255,0.8);
         backdrop-filter: blur(2px);
-    } */
+    }
 
 }
 
 
 @media screen and (max-width: 462px) {
-    /* .dates{
-        top: 28%;
-    } */
+    .dates{
+        top: 39%;
+    }
 
     .places .right-place{
         margin-top: 10%;
@@ -281,8 +281,19 @@ body{
 }
 
 
-@media screen and (max-width: 330px) {
+@media screen and (max-width: 320px) {
 
+    .dates{
+        top: 30%;
+    }
+
+    .dates .date{
+        font-size: 12px;
+    }
+
+    .dates .date.active{
+        font-size: 20px;
+    }
 
 }
 
