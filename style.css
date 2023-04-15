@@ -315,6 +315,7 @@ body{
     border-radius: 4px;
     color: #fff;
     transition: .5s;
+    
 }
 
 pictures1 .close1:hover,
@@ -345,6 +346,7 @@ pictures3 .close3:hover{
     scroll-behavior: smooth;
     gap: 5px;
     animation: slideImage .6s linear;
+    z-index: 999;
 }
 
 .pictures1,
