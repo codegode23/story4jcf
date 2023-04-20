@@ -24,6 +24,21 @@ body{
 }
 
 
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border: 1px solid rgba(255,255,255,0.3);
+    position: fixed;
+    background: rgba(240, 166, 166, 0.644);
+    z-index: 999;
+}
+
+.header img{
+    width: 100%;
+    max-width: 40px;
+}
+
 #story{
     width: 100%;
 }
