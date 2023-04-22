@@ -53,6 +53,7 @@ body{
 .story-content img{
     width: 100%;
     max-width: 530px;
+    border-radius: 5px;
 }
 
 
@@ -113,6 +114,7 @@ body{
     width: 100%;
     max-width: 490px;
     box-shadow: -1.4rem -1.3rem .7rem  rgba(197, 134, 134, 0.3);
+    border-radius: 5px;
 }
 .places .right-place{
     width: 70%;
@@ -604,6 +606,7 @@ pictures3 .close3:hover{
     width: 100%;
     max-width: 300px;
     height: 300px;
+    border-radius: 5px;
 }
 
 .abt-right .abtr-image img,
@@ -611,6 +614,7 @@ pictures3 .close3:hover{
 height: 100%;
 width: 100%;
 object-fit: cover;
+border-radius: 5px;
 }
 
 @media screen and (max-width: 765px) {
@@ -772,7 +776,7 @@ object-fit: cover;
     display: flex;
     flex-direction: column;
     padding: .5rem;
-    background-color: #fcf5f5;
+    background-color: #fdfcfc;
     margin-top: 4%;
 }
 
@@ -789,6 +793,10 @@ object-fit: cover;
     color: #f11d1d;
 }
 
+.team-title p{
+    font-size: 15px;
+}
+
 .team-container{
     width: 100%;
     display: flex;
@@ -802,6 +810,7 @@ object-fit: cover;
     flex-direction: column;
     width: 100%;
     max-width: 330px;
+    margin-bottom: 4%;
 }
 
 .team-card .ttop{
@@ -821,6 +830,7 @@ object-fit: cover;
     width: 100%;
     max-width: 330px;
     margin-bottom: 3%;
+    border-radius: 5px;
 }
 
 .team-card a{
