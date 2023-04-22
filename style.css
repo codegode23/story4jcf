@@ -27,16 +27,30 @@ body{
 .header{
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     border: 1px solid rgba(255,255,255,0.3);
     position: fixed;
     background: rgba(240, 166, 166, 0.644);
     z-index: 999;
+    border-radius: 2px;
+    padding: .2rem;
 }
 
 .header img{
     width: 100%;
-    max-width: 40px;
+    max-width: 30px;
+}
+
+.header #menu{
+    margin-right: 1%;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.header #menu:hover{
+    color: #f11d1d;
 }
 
 #story{
@@ -453,6 +467,7 @@ pictures3 .close3:hover{
 #about{
     width: 100%;
     overflow-x: hidden;
+    margin-top: 4%;
 }
 
 .about{
@@ -462,6 +477,7 @@ pictures3 .close3:hover{
 
 .abt-title{
     padding: .6rem;
+    text-align: center;
 }
 
 .abt-title h4{
