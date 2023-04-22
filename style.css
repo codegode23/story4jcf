@@ -766,3 +766,63 @@ object-fit: cover;
     transform: translateX(0px);
     opacity: 1;
 }
+
+.team{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: .5rem;
+    border: 1px solid black;
+}
+
+.team-title{
+    border: 1px solid black;
+    margin-bottom: 3%;
+    width: 100%;
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.team-container .team-card{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 330px;
+    border: 1px solid black;
+}
+
+.team-card .ttop{
+    margin-bottom: 3%;
+    border: 1px solid black;
+    width: 100%;
+}
+
+.team-container .team-card img{
+    width: 100%;
+    max-width: 330px;
+    margin-bottom: 3%;
+}
+
+.team-card a{
+    text-decoration: none;
+    color: #f11d1d;
+}
+
+.team-card i{
+    font-size: 20px;
+    transition: .5s;
+}
+
+.team-card i:hover{
+    transform: translateY(-3px);
+}
