@@ -31,10 +31,12 @@ body{
     align-items: center;
     border: 1px solid rgba(255,255,255,0.3);
     position: fixed;
-    background: rgba(240, 166, 166, 0.644);
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(9px);
     z-index: 999;
     border-radius: 2px;
-    padding: .2rem;
+    padding: .8rem;
+    box-shadow: 0 .3rem .5rem rgba(0,0,0,.1);
 }
 
 .header img{
