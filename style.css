@@ -838,12 +838,9 @@ border-radius: 5px;
 }
 
 .team-card .ttop h3{
-    font-size: 15px;
+    font-size: 20px;
 }
 
-.team-card .ttop p{
-    color: #f11d1d;
-}
 
 .team-container .team-card img{
     width: 100%;
