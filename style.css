@@ -81,7 +81,7 @@ body{
 
 .donate-container .donate-box i{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
-    color: #000;
+    color: red;
     width: 65px;
     height: 65px;
     padding-top: 15px;
