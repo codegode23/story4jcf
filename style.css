@@ -50,10 +50,11 @@ body{
     font-size: 20px;
     cursor: pointer;
     transition: .5s;
+    color: #f11d1d;
 }
 
 .header #menu:hover{
-    color: #f11d1d;
+    color: #f50303;
 }
 
 .donate-container{
