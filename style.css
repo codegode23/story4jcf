@@ -453,7 +453,7 @@ pictures3 .close3:hover{
     flex-wrap: wrap;
     width: 100%;
     height: 100vh;
-    background: rgba(236, 139, 139, 0.4);
+    background: #fff;
     backdrop-filter: blur(3px);
     top: 0;
     left: 0;
@@ -841,7 +841,7 @@ border-radius: 5px;
     position: relative;
     transform: translateY(150px);
     opacity: 0;
-    transition: all 3s ease;
+    transition: all .8s ease;
 }
 
 .reveal.active{
@@ -855,7 +855,7 @@ border-radius: 5px;
     position: relative;
     transform: translateX(-150px);
     opacity: 0;
-    transition: all 3s ease;
+    transition: all .7s ease;
 }
 
 .reveal-left.active{
