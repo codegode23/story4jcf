@@ -43,7 +43,7 @@ body{
 
 .header img{
     width: 100%;
-    max-width: 30px;
+    max-width: 50px;
     z-index: 999;
 }
 
@@ -71,7 +71,7 @@ body{
     text-align: start;
     padding: 2rem;
     width: 100%;
-    margin-top: 10%;
+    margin-top: 12%;
     gap: 10px;
 }
 
@@ -89,7 +89,7 @@ body{
     background-color: rgb(231, 68, 68);
     width: 0%;
     height: 3px;
-    bottom: -10%;
+    bottom: -5%;
     left: 10px;
     transition: 0.5s ease;
 }
@@ -134,7 +134,7 @@ body{
 
 .header #menu{
     margin-right: 1%;
-    font-size: 20px;
+    font-size: 40px;
     cursor: pointer;
     transition: .5s;
     color: #f11d1d;
