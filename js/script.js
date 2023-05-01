@@ -1,3 +1,29 @@
+//Header reveal on sroll positions
+
+let lastScrollTop = 0;
+let header = document.getElementById("header");
+window.addEventListener("scroll", function(){
+  let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    if (scrollTop > lastScrollTop){
+        header.style.top = "-80px";
+    } else {
+        header.style.top = "0";
+    }
+    lastScrollTop = scrollTop;
+});
+
+
+//Menu toggle
+
+const menu = document.querySelector("#menu");
+const navbar = document.querySelector(".nav");
+
+    menu.addEventListener('click', () =>{
+        menu.classList.toggle('bx-x');
+    navbar.classList.toggle('active');
+    });
+
+
 
 //first gallery popup
     const pic1 = document.querySelector("#gallery1");
@@ -53,12 +79,12 @@
         }));
 
 
-    //for the bottles slider
+    //for the places slider
 
 const btns = document.querySelectorAll(".date");
 const slides = document.querySelectorAll(".places");
 
-var sliderNav = function(manual){
+let sliderNav = function(manual){
 
     btns.forEach((btn) => {
         btn.classList.remove("active");
