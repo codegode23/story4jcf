@@ -33,16 +33,101 @@ body{
     position: fixed;
     background: rgba(255, 255, 255, 0.692);
     backdrop-filter: blur(25px);
-    z-index: 999;
+    z-index: 998;
     border-radius: 2px;
     padding: .8rem;
     top: 0;
     box-shadow: 0 .3rem .5rem rgba(0,0,0,.1);
+    position: relative;
 }
 
 .header img{
     width: 100%;
     max-width: 30px;
+    z-index: 999;
+}
+
+.nav{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    backdrop-filter: blur(3px);
+    top: 0;
+    left: 0;
+    transition: all .5s;
+    animation: slideImage .6s linear;
+    z-index: 990;
+}
+
+.nav .navi{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    padding: 2rem;
+    width: 100%;
+    margin-top: 10%;
+    gap: 10px;
+}
+
+.navi li{
+    font-size: 50px;
+    list-style: none;
+    color: #000000;
+    transition: .6s;
+    position: relative;
+}
+
+.navi li:before{
+    content: "";
+    position: absolute;
+    background-color: rgb(231, 68, 68);
+    width: 0%;
+    height: 3px;
+    bottom: -10%;
+    left: 10px;
+    transition: 0.5s ease;
+}
+
+.navi li:hover::before{
+    width: 50%;
+}
+
+.navi li:hover{
+    color: #f11d1d;
+}
+
+.nav a{
+    text-decoration: none;
+    width: 30%;
+}
+
+.nav .nav-socs{
+    /* align-items: center;
+    display: flex;
+    justify-content: center; */
+    padding: 2rem;
+    width: 100%;
+    max-width: 230px;
+    position: fixed;
+    bottom: 10%;
+    left: 20px;
+    gap: 5px;
+    text-align: start;
+}
+
+.nav-socs i{
+    font-size: 30px;
+    color: #333;
+    transition: .6s;
+}
+
+.nav-socs i:hover{
+    transform: translateY(-3px);
+    color: #f11d1d;
 }
 
 .header #menu{
