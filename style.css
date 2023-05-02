@@ -49,6 +49,8 @@ body{
 
 .nav{
    display: none;
+   transition: all .5s;
+    animation: slideImage .6s linear;
 }
 
 .nav.active{
@@ -77,11 +79,12 @@ body{
 }
 
 .navi li{
-    font-size: 50px;
+    font-size: 45px;
     list-style: none;
     color: #000000;
     transition: .6s;
     position: relative;
+    font-weight: 300;
 }
 
 .navi li:before{
@@ -115,14 +118,14 @@ body{
     padding: 2rem;
     width: 100%;
     max-width: 230px;
-    bottom: 10%;
+    bottom: 0;
     left: 20px;
     gap: 5px;
     text-align: start;
 }
 
 .nav-socs i{
-    font-size: 30px;
+    font-size: 40px;
     color: #333;
     transition: .6s;
 }
@@ -198,6 +201,11 @@ body{
 
 
 @media screen and (max-width: 500px) {
+
+    .nav .navi{
+    margin-top: 20%;
+    gap: 10px;
+}
     .donate-box{
         margin-top: 10%;
     }
@@ -292,6 +300,15 @@ body{
     position: relative;
     
 }
+
+.pl-title{
+    text-align: center;
+}
+
+.pl-title h1{
+    color: #f11d1d;
+}
+
 .places.active{
     display: flex;
     justify-content: space-evenly;
