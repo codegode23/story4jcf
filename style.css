@@ -581,7 +581,7 @@ pictures3 .close3:hover{
 @keyframes slideImage{
     0%{
         opacity: 0;
-        transform: translateY(-50px);
+        transform: translateY(-60px);
     }
 }
 
