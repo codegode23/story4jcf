@@ -345,7 +345,9 @@ body{
 
 
 .right-place .gallery{
-    display: inline-flex;
+    display: flex;
+    width: 100%;
+    max-width: 140px;
     align-items: center;
     padding: 1rem 1.7rem;
     background-color:#fff;
