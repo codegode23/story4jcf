@@ -501,8 +501,8 @@ body{
 
 
 .right-place .gallery{
-    padding: 1rem .5rem;
-    font-size: 15px;
+    font-size: 16px;
+    max-width: 120px;
 }
 
 }
