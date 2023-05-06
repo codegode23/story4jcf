@@ -928,3 +928,68 @@ body{
     transform: translateY(-3px);
     color: #f11d1d;
 }
+
+
+#galleries{
+    width: 100%;
+   align-items: center;
+   text-align: center;
+   align-content: center;
+   margin-top: 5%;
+}
+
+#galleries h2{
+    color: rgb(247, 62, 62);
+    margin-bottom: 5%;
+    font-size: 20px;
+}
+
+#galleries .gall-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 3vw;
+    align-items: center;
+}
+
+.gall-container img{
+    width: 29vw;
+    margin-top: .4%;
+}
+
+@media screen and (max-width: 650px) {
+    
+    
+#galleries .gall-container{
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   gap: 10px;
+}
+
+.gall-container img{
+    width: 100%;
+    max-width: 40vw;
+    margin-top: .4%;
+}
+
+}
+
+@media screen and (max-width: 350px) {
+    
+    
+#galleries .gall-container{
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   gap: 5px;
+}
+
+.gall-container img{
+    width: 100%;
+    max-width: 45vw;
+    margin-top: .4%;
+}
+
+}
