@@ -15,6 +15,10 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 section{
     padding: 1.3rem 4%;   
 }
@@ -24,6 +28,8 @@ body{
     position: relative;
 }
 
+
+/*Header Section Starts*/
 
 .header{
     width: 100%;
@@ -47,6 +53,22 @@ body{
     z-index: 999;
 }
 
+
+.header #menu{
+    margin-right: 1%;
+    font-size: 40px;
+    cursor: pointer;
+    transition: .5s;
+    color: #f11d1d;
+}
+
+.header #menu:hover{
+    color: #f50303;
+}
+
+/*Header Section Ends*/
+
+/*Navbar Section Starts*/
 .nav{
    display: none;
    transition: all .5s;
@@ -135,17 +157,10 @@ body{
     color: #f11d1d;
 }
 
-.header #menu{
-    margin-right: 1%;
-    font-size: 40px;
-    cursor: pointer;
-    transition: .5s;
-    color: #f11d1d;
-}
+/*Navbar Section Ends*/
 
-.header #menu:hover{
-    color: #f50303;
-}
+
+/*Donate Section Starts*/
 
 .donate-container{
     margin-top: 10%;
@@ -223,9 +238,9 @@ body{
 }
 
 
+/*Donate Section Ends*/
 
-
-
+/*Story Section Starts*/
 #story{
     width: 100%;
 }
@@ -286,6 +301,11 @@ body{
     }
 }
 
+/*Story Section Ends*/
+
+
+
+/*Places Section Starts*/
 
 #places{
     width: 100%;
@@ -334,9 +354,8 @@ body{
 
 .right-place p{
     padding: .6rem;
-    border-left: 4px solid rgb(247, 62, 62);
     color: #29292c;
-    font-size: 16px;
+    font-size: 14px;
     border-radius: 5px;
 }
 
@@ -658,7 +677,7 @@ body{
 }
 
 
-
+/*Story Section Ends*/
 
 
 /*About Section Starts*/
@@ -712,15 +731,22 @@ body{
 .about .extra .vision,
 .about .extra .mission
 {
-    display: flex;
+    /* display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 100%; */
+    padding: 1rem;
+    background: #fff;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1%;
+    align-items: center;
 }
 
 .extra .vision .vis-left,
 .extra .mission .mis-right{
-    width: 60%;
+    width: 50%;
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -734,19 +760,21 @@ body{
 }
 .extra .vision .vis-left p,
 .extra .mission .mis-right p{
-    color: #29292c;
     font-size: 14px;
+    margin-bottom: 5%;
+    letter-spacing: 1px;
+    color: #202020;
 }
 
 .extra .vision img,
 .extra .mission img{
     width: 100%;
-    max-width: 500px;
-    border-radius: 5px;
+    max-width: 480px;
+    margin-left: -2%;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(218, 120, 120, 0.3) 0px 1px 3px -1px;
 }
 
-@media screen and (max-width:830px) {
+/* @media screen and (max-width:830px) {
 
     .about{
         padding: .5rem;
@@ -788,7 +816,7 @@ body{
         font-size: 15px;
     }
 
-}
+} */
 
 
 /* 
@@ -844,6 +872,11 @@ body{
     opacity: 1;
 }
 
+
+
+
+/*Team Section Starts*/
+
 .team{
     width: 100%;
     display: flex;
@@ -888,7 +921,7 @@ body{
 }
 
 .team-card .ttop{
-    margin-bottom: 3%;
+    margin-bottom: 5%;
     width: 100%;
     text-align: center;
 }
@@ -921,6 +954,10 @@ body{
     color: #f11d1d;
 }
 
+
+/*Team Section Ends*/
+
+/*Gallery Section Starts*/
 
 #galleries{
     width: 100%;
