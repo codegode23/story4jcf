@@ -163,7 +163,7 @@ body{
 /*Donate Section Starts*/
 
 .donate-container{
-    margin-top: 10%;
+    margin-top: 2%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -203,7 +203,7 @@ body{
 
 .donate-box .don-btm{
     margin-top: 20%;
-    margin-bottom: 6%;
+    margin-bottom: 2%;
     padding: .5rem;
 }
 
@@ -316,7 +316,6 @@ body{
     display: none;
     transition: .6s;
     position: relative;
-    
 }
 
 .pl-title{
@@ -325,6 +324,8 @@ body{
 
 .pl-title h1{
     color: #f11d1d;
+    margin-top: 3%;
+    margin-bottom: 3%;
 }
 
 .places.active{
@@ -337,26 +338,25 @@ body{
 .places img{
     width: 100%;
     max-width: 490px;
-    box-shadow: -1.4rem -1.3rem .7rem  rgba(197, 134, 134, 0.3);
+    box-shadow: -1.4rem -1.3rem .7rem  rgba(228, 189, 189, 0.3);
     border-radius: 5px;
 }
 .places .right-place{
     width: 70%;
-    padding: .6rem;
+    padding: .1rem;
     gap: 15px;
 }
 
 .right-place h1{
     font-size: 40px;
-    padding: .5rem;
+    padding: .2rem;
     font-weight: 400;
 }
 
 .right-place p{
-    padding: .6rem;
+    padding: .2rem;
     color: #29292c;
     font-size: 14px;
-    border-radius: 5px;
 }
 
 
@@ -365,7 +365,7 @@ body{
     width: 100%;
     max-width: 140px;
     align-items: center;
-    padding: 1rem 1.7rem;
+    padding: 1rem 1.5rem;
     background-color:#fff;
     backdrop-filter: blur(2px);
     color: rgb(247, 62, 62);
@@ -460,18 +460,17 @@ body{
         width: 100%;
         margin-top: 5%;
         padding: .1rem;
-        gap: 15px;
+        gap: 10px;
     }
 
     
 .right-place h1{
     font-size: 30px;
-    padding: .3rem;
+    padding: .1rem;
+    width: 100%;
 }
     .right-place p{
-    padding: .6rem;
-    border-left: 4px solid rgb(247, 62, 62);
-    line-height: 28px;
+    padding: .1rem;
     color: #1a1717;
     font-size: 14px;
 }
@@ -495,12 +494,12 @@ body{
 
 @media screen and (max-width: 462px) {
     .dates{
-        top: 39%;
+        top: 36%;
     }
 
     .places .right-place{
         margin-top: 10%;
-        padding: .4rem;
+        padding: .1rem;
     }
 
    
@@ -509,10 +508,7 @@ body{
 }
     
 .right-place p{
-    padding: .2rem;
-    border-left: 4px solid rgb(247, 62, 62);
-    line-height: 22px;
-    font-size: .9rem;
+    padding: .1rem;
 }
 
 
@@ -828,7 +824,7 @@ body{
 
     .about .content{
         width: 100%;
-        padding: .1rem;
+        padding: .3rem;
     }
 
     .about .content p{
@@ -902,7 +898,7 @@ body{
     display: flex;
     flex-direction: column;
     padding: .5rem;
-    background-color: #fdfcfc;
+    background-color: #eee;
     margin-top: 4%;
 }
 
