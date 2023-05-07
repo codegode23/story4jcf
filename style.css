@@ -578,8 +578,8 @@ body{
 .pictures3.active{
     position: fixed;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     width: 100%;
     height: 100vh;
@@ -593,9 +593,9 @@ body{
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
     scroll-behavior: smooth;
-    gap: 5px;
     animation: slideImage .6s linear;
     z-index: 999;
+    gap: 10px;
 }
 
 .pictures1,
@@ -611,31 +611,46 @@ body{
     }
 }
 
+.pictures1 .pics1-gallery{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 3vw;
+    align-items: center;
+}
+
 
 .pictures1 .image,
-.pictures1 .videos,
 .pictures2 .image,
-.pictures2 .videos,
-.pictures3 .image,
-.pictures3 .videos{
-    height: 43vh;
-    width: 40vh;
-    overflow: hidden;
-    border: 1px solid #fff;
-    border-radius: 2px;
+.pictures3 .image{
     cursor: pointer;
 }
 
+
 .pictures1 .image img,
-.pictures1 .videos video,
 .pictures2 .image img,
-.pictures2 .videos video,
-.pictures3 .image img,
-.pictures3 .videos video{
+.pictures3 .image img{
+     height: 100%;
+    width: 100%;
+    object-fit: cover; 
+    width: 29vw;
+    margin-top: .4%;
+    border-radius: 5px;
+}
+
+
+/* .pictures1 img,
+.pictures2 img,
+.pictures3 img
+{
     height: 100%;
     width: 100%;
     object-fit: cover;
-}
+    width: 29vw;
+    margin-top: .4%;
+    border-radius: 5px;
+} */
 
 .pictures1 .videos .active,
 .pictures2 .videos .active,
@@ -652,28 +667,44 @@ body{
 }
 
 
-@media screen and (max-width: 600px) {
-    .pictures1 .image,
-    .pictures1 .videos,
-    .pictures2 .image,
-    .pictures2 .videos,
-    .pictures3 .image,
-    .pictures3 .videos{
-    height: 28vh;
-    width: 20vh;
-}
+@media screen and (max-width: 650px) {
+
+    .pictures1 .pics1-gallery{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        }
+
+
+        .pictures1 .image img,
+        .pictures2 .image img,
+        .pictures3 .image img{
+        width: 100%;
+        max-width: 40vw;
+        margin-top: .4%;
+    }
+
+
+
 }
 
-@media screen and (max-width: 330px) {
-    .pictures1 .image,
-    .pictures1 .videos,
-    .pictures2 .image,
-    .pictures2 .videos,
-    .pictures3 .image,
-    .pictures3 .videos{
-    height: 20vh;
-    width: 14vh;
-}
+@media screen and (max-width: 350px) {
+
+    .pictures1 .pics1-gallery{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    }
+
+    .pictures1 .image img,
+        .pictures2 .image img,
+        .pictures3 .image img{
+            width: 100%;
+            max-width: 45vw;
+            margin-top: .4%;
+    }
 }
 
 
@@ -690,12 +721,11 @@ body{
     align-items: center; */
     flex-direction: column;
     align-items: center;
-    padding: 2rem;
 }
 
 .about .content{
     width: 89%;
-    padding: 1.3rem;
+    padding: 1rem;
     background: #fff;
     border-radius: 20px;
     /* box-shadow: 0 .3rem .5rem rgba(0,0,0,.2);
@@ -717,25 +747,23 @@ body{
 }
 
 
-.about .extra{
+ .extra{
     width: 100%;
-    padding: 1rem;
+    /* padding: 1rem;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; */
     margin-top: 4%;
    position: relative;
-    flex-wrap: wrap;
-    gap: 20px;
 }
 
-.about .extra .vision,
-.about .extra .mission
+ .extra .vision,
+ .extra .mission
 {
     /* display: flex;
     justify-content: center;
     align-items: center;
     width: 100%; */
-    padding: 1rem;
+    padding: .8rem;
     background: #fff;
     display:flex;
     justify-content: center;
@@ -746,8 +774,7 @@ body{
 
 .extra .vision .vis-left,
 .extra .mission .mis-right{
-    width: 50%;
-    padding: 1rem;
+    width: 40%;
     display: flex;
     flex-direction: column;
 }
@@ -755,13 +782,13 @@ body{
 .extra .vision .vis-left h3,
 .extra .mission .mis-right h3{
     color: rgb(247, 62, 62);
-    font-size: 25px;
-    margin-bottom: 2%;
+    letter-spacing: 2px;
+    font-size: 20px;
 }
 .extra .vision .vis-left p,
 .extra .mission .mis-right p{
     font-size: 14px;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
     letter-spacing: 1px;
     color: #202020;
 }
@@ -769,54 +796,47 @@ body{
 .extra .vision img,
 .extra .mission img{
     width: 100%;
-    max-width: 480px;
-    margin-left: -2%;
+    max-width: 400px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(218, 120, 120, 0.3) 0px 1px 3px -1px;
 }
 
-/* @media screen and (max-width:830px) {
+@media screen and (max-width:806px) {
 
-    .about{
-        padding: .5rem;
+    .extra .vision{
+        flex-direction: column-reverse;
     }
-
-    .about .extra .vision{
-        flex-direction: column;
-    }
-    .about .extra .mission{
+     .extra .mission{
         flex-direction: column-reverse;
     }
 
     .extra .vision .vis-left,
     .extra .mission .mis-right{
         width: 100%;
-        padding: .5rem;
+        margin-bottom: 3%;
     }
 
         .extra .vision img,
         .extra .mission img{
-        max-width: 450px;
+            width: 100%;
+        max-width: 490px;
+        margin-bottom: 5%;
     }
 
 }
 
 @media screen and (max-width:500px) {
 
-    .about{
-        padding: .5rem;
-    }
-
     .about .content{
         width: 100%;
-        padding: .7rem;
+        padding: .1rem;
     }
 
     .about .content p{
         color: #333;
-        font-size: 15px;
+        font-size: 14px;
     }
 
-} */
+} 
 
 
 /* 
@@ -887,7 +907,7 @@ body{
 }
 
 .team-title{
-    margin-bottom: 3%;
+    margin-bottom: 5%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -909,6 +929,7 @@ body{
     justify-content: center;
     flex-wrap: wrap;
     gap: 16px;
+    margin-top: 3%;
 }
 
 .team-container .team-card{
