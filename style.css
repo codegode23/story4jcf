@@ -233,8 +233,10 @@ body{
 .story-content{
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 5%;
     gap: 10px;
+    
 }
 
 .story-content img{
@@ -251,15 +253,14 @@ body{
 
 .right-story h1{
     font-size: 30px;
-    padding: 1rem;
+    margin-bottom: 2%;
     font-weight: 400;
     color: #f11d1d;
 }
 
 .right-story p{
-    line-height: 28px;
-    color: #1a1717;
-    font-size: 1rem;
+    color: #29292c;
+    font-size: 14px;
     padding: .1px;
 }
 
@@ -275,6 +276,13 @@ body{
 
     .story-content img{
         width: 100%;
+    }
+}
+
+
+@media screen and (max-width:460px) {
+    .right-story p{
+        font-size: 15px;
     }
 }
 
@@ -327,9 +335,8 @@ body{
 .right-place p{
     padding: .6rem;
     border-left: 4px solid rgb(247, 62, 62);
-    line-height: 28px;
-    color: #1a1717;
-    font-size: 1rem;
+    color: #29292c;
+    font-size: 16px;
     border-radius: 5px;
 }
 
@@ -447,7 +454,7 @@ body{
     border-left: 4px solid rgb(247, 62, 62);
     line-height: 28px;
     color: #1a1717;
-    font-size: 1.1rem;
+    font-size: 14px;
 }
 
     .dates{
@@ -686,8 +693,8 @@ body{
 }
 
 .about .content p{
-    color: #333;
-    font-size: 1.3rem;
+    color: #29292c;
+    font-size: 1rem;
 }
 
 
@@ -727,7 +734,7 @@ body{
 }
 .extra .vision .vis-left p,
 .extra .mission .mis-right p{
-    color: #333;
+    color: #29292c;
     font-size: 14px;
 }
 
@@ -874,6 +881,7 @@ body{
 .team-container .team-card{
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 100%;
     max-width: 330px;
     margin-bottom: 4%;
@@ -882,6 +890,7 @@ body{
 .team-card .ttop{
     margin-bottom: 3%;
     width: 100%;
+    text-align: center;
 }
 
 .team-card .ttop h3{
@@ -891,9 +900,10 @@ body{
 
 .team-container .team-card img{
     width: 100%;
-    max-width: 330px;
+    max-width: 200px;
+    height: 200px;
     margin-bottom: 3%;
-    border-radius: 5px;
+    border-radius: 50%;
 }
 
 .team-card a{
