@@ -13,6 +13,12 @@
 // });
 
 
+//smooth scroll
+const scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 1000,
+     speedAsDuration: true
+    });
+
 //Menu toggle
 
 const menu = document.querySelector("#menu");
