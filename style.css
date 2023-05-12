@@ -94,6 +94,13 @@ position: absolute;
   background-color: rgba(14, 8, 8, 0.5);
 }
 
+@media screen and (max-width:600px) {
+    .home .hm-contents{
+        width: 100%;
+        padding: .4rem;
+    }
+}
+
 /*Header Section Starts*/
 
 .header{
