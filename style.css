@@ -37,6 +37,10 @@ body{
     width: 100%;
     height: 100vh;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 .home video{
@@ -47,7 +51,7 @@ body{
 
 .home .hm-contents{
     position: absolute;
-    width: 100%;
+    width: 70%;
     height: 100%;
     top: 0;
     display: flex;
@@ -55,7 +59,30 @@ body{
     justify-content: center;
     align-items: center;
     color: #fff;
-    border: 1px solid black;
+}
+
+.hm-contents .events{
+    display: flex;
+    /* width: 100%;
+    max-width: 140px; */
+    align-items: center;
+    text-align: center;
+    padding: 1rem 1.8rem;
+    backdrop-filter: blur(2px);
+    color: var(--secondary-color);
+    border: 3px solid var(--primary-color);
+    border-radius: 40px;
+    font-weight: 400;
+    cursor: pointer;
+    margin-top: 5%;
+    text-decoration: none;
+    transition: .5s ease-in-out;
+}
+
+.hm-contents .events:hover{
+    color: var(--secondary-color);
+    /* background-color: rgb(247, 62, 62); */
+    background-color: var(--primary-color);
 }
 
 .home .overlay{
@@ -404,8 +431,7 @@ position: absolute;
     max-width: 140px;
     align-items: center;
     text-align: center;
-    padding: 1rem 1.4rem;
-    background-color:var(--secondary-color);
+    padding: 1rem 1.8rem;
     backdrop-filter: blur(2px);
     color: var(--primary-color);
     border: 3px solid var(--primary-color);
@@ -413,6 +439,7 @@ position: absolute;
     font-weight: 400;
     cursor: pointer;
     margin-top: 5%;
+    transition: .5s ease-in-out;
 }
 
 
