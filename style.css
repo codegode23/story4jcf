@@ -97,11 +97,37 @@ position: absolute;
   
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:400px) {
     .home .hm-contents{
         width: 100%;
         padding: .4rem;
     }
+
+    .hm-contents h1{
+        font-size: 18px;
+    }
+    #home{
+        height: 50vh;
+    }
+
+    .hm-contents .events{
+
+        padding: .5rem 1rem;
+        border: 4px solid var(--primary-color);
+    }
+
+    .header{
+        padding: .2rem;
+    }
+
+    
+.header img{
+    max-width: 25px;
+}
+
+.header #menu{
+    font-size: 25px;
+}
 }
 
 /*Header Section Starts*/
