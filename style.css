@@ -237,7 +237,7 @@ position: absolute;
 /*Donate Section Starts*/
 
 .donate-container{
-    margin-top: 2%;
+    margin-top: 9%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -928,9 +928,9 @@ position: absolute;
 /*Top reaveal*/
 .reveal{
     position: relative;
-    transform: translateY(150px);
+    transform: translateY(50px);
     opacity: 0;
-    transition: all .8s ease;
+    transition: .9s;
 }
 
 .reveal.active{
