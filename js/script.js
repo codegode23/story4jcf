@@ -24,12 +24,17 @@ const scroll = new SmoothScroll('a[href*="#"]', {
 const menu = document.querySelector("#menu");
 const navbar = document.querySelector(".nav");
 
+
     menu.addEventListener('click', () =>{
         menu.classList.toggle('bx-x');
     navbar.classList.toggle('active');
     });
 
+    // const navLinks = document.querySelectorAll(".navi a");
 
+    // navLinks.addEventListener('click', () =>{
+    //     navbar.classList.toggle('active');
+    // });
 
 //first gallery popup
     const pic1 = document.querySelector("#gallery1");
@@ -69,20 +74,20 @@ const navbar = document.querySelector(".nav");
 
 
 //Video popup
-        let video = document.querySelectorAll('video');
+        // let video = document.querySelectorAll('video');
 
-            video.forEach(play => play.addEventListener ('click', () => {
+        //     video.forEach(play => play.addEventListener ('click', () => {
 
-            play.classList.toggle('active');
+        //     play.classList.toggle('active');
 
-            if(play.paused){
-                play.play();
-            }else{
-                play.pause();
-                play.currentTime = 0;
-            }
+        //     if(play.paused){
+        //         play.play();
+        //     }else{
+        //         play.pause();
+        //         play.currentTime = 0;
+        //     }
             
-        }));
+        // }));
 
 
     //for the places slider
