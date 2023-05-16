@@ -442,6 +442,11 @@ position: absolute;
     box-shadow: -1.4rem -1.3rem .7rem  rgba(228, 189, 189, 0.3);
     border-radius: 5px;
 }
+
+.right-place .rp-inner{
+    overflow-y: scroll;
+    height: 25vh;
+}
 .places .right-place{
     width: 70%;
     padding: .1rem;
