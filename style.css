@@ -463,6 +463,7 @@ position: absolute;
     padding: .2rem;
     color: #29292c;
     font-size: 14px;
+    text-align: start;
 }
 
 
@@ -587,7 +588,7 @@ position: absolute;
         position: absolute;
         top: 43%;
         display: flex;
-        justify-content: center;
+        /* justify-content: center; */
         align-items: center;
         gap: 12px;
         padding: .2rem;
