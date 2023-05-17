@@ -446,6 +446,7 @@ position: absolute;
 .right-place .rp-inner{
     overflow-y: scroll;
     height: 25vh;
+    scrollbar-color: var(--primary-color);
 }
 .places .right-place{
     width: 70%;
