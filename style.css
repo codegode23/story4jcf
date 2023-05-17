@@ -270,7 +270,10 @@ position: absolute;
     flex-wrap: wrap;
     padding: .5rem;
     gap: 16px;
+   
 }
+
+
 
 
 .donate-container .donate-box{
@@ -283,6 +286,11 @@ position: absolute;
     margin-bottom: 3%;
     margin-left: 1%;
     border-radius: 20px;
+    transition: .6s;
+}
+
+.donate-container .donate-box:hover{
+    transform: translateY(-7px);
 }
 
 
@@ -891,7 +899,16 @@ position: absolute;
 .extra .mission .mis-right h3{
     color: var(--primary-color);
     font-size: 20px;
+   transition: .5s;
+    padding-left: 3px;
+    margin-bottom: .4rem;
 }
+
+.extra .vision .vis-left h3:hover,
+.extra .mission .mis-right h3:hover{
+    border-left: 10px solid var(--primary-color);
+}
+
 .extra .vision .vis-left p,
 .extra .mission .mis-right p{
     font-size: 14px;
@@ -1009,14 +1026,15 @@ position: absolute;
     display: flex;
     flex-direction: column;
     padding: .5rem;
-    /* background-color: #eee; */
+    background-color: #eee;
     margin-top: 4%;
-    border: 5px solid var(--primary-color);
-    border-radius: 10px;
+    /* border: 5px solid var(--primary-color); */
+    border-radius: 30px;
 }
 
 .team-title{
     margin-bottom: 2%;
+    margin-top: 3%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -1049,6 +1067,11 @@ position: absolute;
     width: 100%;
     max-width: 300px;
     margin-bottom: 4%;
+    transition: .6s;
+}
+
+.team-container .team-card:hover{
+    transform: translateY(-7px);
 }
 
 .team-card .ttop{
@@ -1061,17 +1084,21 @@ position: absolute;
     font-size: 20px;
 }
 
-.team-card .t-middle{
+/* .team-card .t-middle{
     width: 100%;
     max-width: 250px;
     height: 45vh;
     border-radius: 5px;
-}
+} */
 
 .team-container .team-card img{
-    width: 100%;
+    /* width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover; */
+    width: 100%;
+    max-width: 250px;
+    border-radius: 3px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(218, 120, 120, 0.3) 0px 1px 3px -1px;
 }
 
 .team-card a{
@@ -1091,6 +1118,8 @@ position: absolute;
 
 
 /*Team Section Ends*/
+
+
 
 /*Gallery Section Starts*/
 
@@ -1159,4 +1188,23 @@ position: absolute;
     margin-top: .4%;
 }
 
+}
+
+
+
+/*Footer/Contact Us Section begins*/
+
+#contact{
+    width: 100%;
+    margin-top: 5%;
+}
+
+.footer .cont-title{
+    text-align: center;
+}
+
+
+.cont-title h1{
+    font-size: 40px;
+    color: var(--primary-color);
 }
