@@ -1243,19 +1243,24 @@ position: absolute;
 
 .fo-socs i{
     font-size: 30px;
-    color: #333;
+    color: var(--primary-color);
     transition: .6s;
 }
 
 
 .fo-socs i:hover{
     transform: translateY(-3px);
+    color: #333;
+}
+
+.fo-don i{
     color: var(--primary-color);
 }
 
 @media screen and (max-width: 758px) {
     .footer{
         flex-direction: column;
+        border-top-left-radius: 170px;
     }
 
     .footer .fo-left{
