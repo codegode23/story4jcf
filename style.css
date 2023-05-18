@@ -265,6 +265,7 @@ position: absolute;
 
 .donate{
     align-items: center;
+    margin-bottom: 4%;
 }
 
 .donate-container{
@@ -379,6 +380,7 @@ position: absolute;
 /*Story Section Starts*/
 #story{
     width: 100%;
+    margin-bottom: 8%;
 }
 
 .story-content{
@@ -688,7 +690,8 @@ position: absolute;
 
 .pictures1 .close1,
 .pictures2 .close2,
-.pictures3 .close3{
+.pictures3 .close3,
+.pictures4 .close4{
     position: absolute;
     top: 2px;
     right: 0;
@@ -709,14 +712,18 @@ position: absolute;
 
 .pictures1 .close1:hover,
 .pictures2 .close2:hover,
-.pictures3 .close3:hover{
+.pictures3 .close3:hover,
+.pictures4 .close4:hover
+{
     color: var(--secondary-color);
     background: var(--primary-color);
 }
 
 .pictures1.active,
 .pictures2.active,
-.pictures3.active{
+.pictures3.active,
+.pictures4.active
+{
     position: fixed;
     display: flex;
     justify-content: center;
@@ -741,7 +748,9 @@ position: absolute;
 
 .pictures1,
 .pictures2,
-.pictures3{
+.pictures3,
+.pictures4
+{
     display: none;
 }
 
@@ -754,7 +763,9 @@ position: absolute;
 
 .pictures1 .pics1-gallery,
 .pictures2 .pics2-gallery,
-.pictures3 .pics3-gallery{
+.pictures3 .pics3-gallery,
+.pictures4 .pics4-gallery
+{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -766,14 +777,18 @@ position: absolute;
 
 .pictures1 .image,
 .pictures2 .image,
-.pictures3 .image{
+.pictures3 .image,
+.pictures4 .image
+{
     cursor: pointer;
 }
 
 
 .pictures1 .image img,
 .pictures2 .image img,
-.pictures3 .image img{
+.pictures3 .image img,
+.pictures4 .image img
+{
      height: 100%;
     width: 100%;
     object-fit: cover; 
@@ -795,7 +810,7 @@ position: absolute;
     border-radius: 5px;
 } */
 
-.pictures1 .videos .active,
+/* .pictures1 .videos .active,
 .pictures2 .videos .active,
 .pictures3 .videos .active
 {
@@ -807,7 +822,7 @@ position: absolute;
     width: 80%;
     box-shadow: 0 0 0 100vh rgba(0,0,0,.7);
     z-index: 1;
-}
+} */
 
 
 @media screen and (max-width: 650px) {
@@ -822,7 +837,9 @@ position: absolute;
 
         .pictures1 .image img,
         .pictures2 .image img,
-        .pictures3 .image img{
+        .pictures3 .image img,
+        .pictures4 .image img
+        {
         width: 100%;
         max-width: 40vw;
         margin-top: .4%;
@@ -842,11 +859,13 @@ position: absolute;
     }
 
     .pictures1 .image img,
-        .pictures2 .image img,
-        .pictures3 .image img{
-            width: 100%;
-            max-width: 45vw;
-            margin-top: .4%;
+    .pictures2 .image img,
+    .pictures3 .image img,
+    .pictures4 .image img
+    {
+        width: 100%;
+        max-width: 45vw;
+        margin-top: .4%;
     }
 }
 
@@ -1054,7 +1073,8 @@ position: absolute;
     flex-direction: column;
     padding: .5rem;
     background-color: #eee;
-    margin-top: 4%;
+    margin-top: 8%;
+    margin-bottom: 5%;
     /* border: 5px solid var(--primary-color); */
     border-radius: 30px;
 }

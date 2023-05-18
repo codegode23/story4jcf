@@ -72,6 +72,18 @@ const navbar = document.querySelector(".nav");
         pictures3.classList.remove('active');
     };
 
+//fourthgallery popup
+    const pic4 = document.querySelector("#gallery4");
+    const pictures4 = document.querySelector(".pictures4");
+
+    pic4.addEventListener('click', () =>{
+    pictures4.classList.toggle('active');
+    });
+
+    document.querySelector('.close4').onclick = () =>{
+        pictures4.classList.remove('active');
+    };
+
 
 //Video popup
         // let video = document.querySelectorAll('video');
