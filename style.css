@@ -263,6 +263,10 @@ position: absolute;
 
 /*Donate Section Starts*/
 
+.donate{
+    align-items: center;
+}
+
 .donate-container{
     margin-top: 9%;
     display: flex;
@@ -274,8 +278,6 @@ position: absolute;
 }
 
 
-
-
 .donate-container .donate-box{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(218, 120, 120, 0.3) 0px 1px 3px -1px;
     width: 100%;
@@ -283,7 +285,7 @@ position: absolute;
     position: relative;
     flex: 0 0 auto;
     margin-top: 5%;
-    margin-bottom: 3%;
+    margin-bottom: 8%;
     margin-left: 1%;
     border-radius: 20px;
     transition: .6s;
@@ -322,6 +324,27 @@ position: absolute;
 }
 
 
+.donate-btn{
+    align-items: center;
+    text-align: center;
+    padding: 1rem 1.8rem;
+    backdrop-filter: blur(2px);
+    color: var(--primary-color);
+    border: 3px solid var(--primary-color);
+    border-radius: 40px;
+    font-weight: 400;
+    cursor: pointer;
+    /* margin-top: 25%; */
+    margin-left: 45%;
+    text-decoration: none;
+    transition: .5s ease-in-out;
+}
+
+.donate-btn:hover{
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+}
+
 
 
 @media screen and (max-width: 500px) {
@@ -343,6 +366,10 @@ position: absolute;
     margin-top: 20%;
     margin-bottom: 6%;
     padding: .5rem;
+}
+
+.donate-btn{
+    margin-left: 28%;
 }
 }
 
@@ -1242,7 +1269,7 @@ position: absolute;
 }
 
 .fo-socs i{
-    font-size: 30px;
+    font-size: 40px;
     color: var(--primary-color);
     transition: .6s;
 }
@@ -1251,6 +1278,10 @@ position: absolute;
 .fo-socs i:hover{
     transform: translateY(-3px);
     color: #333;
+}
+
+.fo-don p{
+    font-size: 20px;
 }
 
 .fo-don i{
@@ -1287,4 +1318,29 @@ position: absolute;
         align-items: center;
         text-align: center;
     }
+}
+
+
+@media screen and (max-width: 340px) {
+    
+    .fo-left p{
+        font-size: 15px;
+    }
+
+      .fo-left img{
+        width: 100%;
+        max-width: 120px;
+    }
+
+    .fo-top h1, .fo-don h1{
+        font-size: 20px;
+    }
+
+.fo-socs i{
+    font-size: 30px;
+}
+
+.fo-don p{
+    font-size: 13px;
+}
 }
