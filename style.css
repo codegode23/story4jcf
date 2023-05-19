@@ -29,7 +29,7 @@ section{
 }
 
 body{
-    background-color: #fff;
+   
     position: relative;
 }
 
@@ -466,6 +466,7 @@ position: absolute;
     margin-bottom: 3%;
 }
 
+
 .places.active{
     display: flex;
     justify-content: space-evenly;
@@ -485,6 +486,21 @@ position: absolute;
     height: 25vh;
     scrollbar-color: var(--primary-color);
 }
+
+
+.rp-inner i{
+    
+        font-size: 40px;
+        color: var(--primary-color);
+        transition: .6s;
+    }
+    
+    .rp-inner i:hover{
+        transform: translateY(-3px);
+        color: #333;
+    }
+
+
 .places .right-place{
     width: 70%;
     padding: .1rem;
@@ -520,6 +536,7 @@ position: absolute;
     cursor: pointer;
     margin-top: 5%;
     transition: .5s ease-in-out;
+    gap: 6px;
 }
 
 
