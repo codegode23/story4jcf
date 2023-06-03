@@ -250,16 +250,99 @@ position: absolute;
 
 .nav-socs i{
     font-size: 40px;
-    color: #333;
+    color: var(--primary-color);
     transition: .6s;
 }
 
 .nav-socs i:hover{
     transform: translateY(-3px);
-    color: var(--primary-color);
+    color: #333;
 }
 
 /*Navbar Section Ends*/
+
+
+/*Upcoming events Starts*/
+
+#projects{
+    width: 100%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+.projects .pro-title{
+    color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+.projects .prj-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+.prj-container img{
+    width: 100%;
+    max-width: 420px;
+}
+
+.prj-container .prj-right{
+    width: 50%;
+}
+
+.prj-container .prj-right .prj-title{
+    margin-bottom: 2%;
+    font-size: 18px;
+}
+
+.prj-title span{
+    color: var(--primary-color);
+    margin-right: 1.5%;
+}
+
+.prj-right .prj-info h3{
+    font-weight: 200;
+    margin-bottom: 2%;
+}
+
+.prj-info p{
+    margin-top: 2%;
+}
+
+.prj-right .prj-info span{
+    color: var(--primary-color);
+    margin-right: 1%;
+}
+
+@media screen and (max-width:810px){
+    .projects .prj-container{
+      flex-direction: column;
+    }
+
+    .prj-container .prj-right{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .prj-container .prj-right .prj-title{
+        margin-top: 2%;
+        font-size: 14px;
+    }
+
+    .prj-title span{
+        margin-right: .5%;
+    }
+
+    .prj-right .prj-info h3{
+       font-size: 15px;
+    }
+}
 
 
 /*Donate Section Starts*/
