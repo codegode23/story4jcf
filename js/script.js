@@ -30,11 +30,11 @@ const navbar = document.querySelector(".nav");
     navbar.classList.toggle('active');
     });
 
-    // const navLinks = document.querySelectorAll(".navi a");
+//    document.getElementsByClassName('.nav-close').onclick = () => {
+//     navbar.classList.toggle('active');
+//     menu.classList.toggle('bx-x');
+//    };
 
-    // navLinks.addEventListener('click', () =>{
-    //     navbar.classList.toggle('active');
-    // });
 
 //first gallery popup
     const pic1 = document.querySelector("#gallery1");

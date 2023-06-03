@@ -208,6 +208,7 @@ position: absolute;
     transition: .6s;
     position: relative;
     font-weight: 300;
+    cursor: pointer;
 }
 
 .navi li:before{
