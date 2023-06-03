@@ -289,6 +289,8 @@ position: absolute;
 .prj-container img{
     width: 100%;
     max-width: 420px;
+    border-radius: 10px;
+    box-shadow: rgba(40, 190, 153, 0.25) 0px 2px 5px -1px, rgba(93, 219, 120, 0.945) 0px 1px 3px -1px;
 }
 
 .prj-container .prj-right{
@@ -989,13 +991,13 @@ position: absolute;
 
 .about .content{
     width: 89%;
-    padding: 1rem;
+    padding: .5rem;
     text-align: justify;
     background: var(--secondary-color);
-    border-radius: 20px;
+    border-radius: 5px;
     /* box-shadow: 0 .3rem .5rem rgba(0,0,0,.2);
     border: 5px solid rgba(243, 28, 28, 0.801); */
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(218, 120, 120, 0.3) 0px 1px 3px -1px;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(218, 120, 120, 0.3) 0px 1px 3px -1px; */
 }
 
 .about .content h3{
@@ -1407,6 +1409,14 @@ position: absolute;
 
 .fo-don i{
     color: var(--primary-color);
+}
+
+.fo-don .fo-don-info{
+    margin-top: 3%;
+}
+
+.fo-don .fo-don-info h1{
+    font-size: 16px;
 }
 
 @media screen and (max-width: 758px) {
