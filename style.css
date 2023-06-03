@@ -670,7 +670,7 @@ position: absolute;
 
 .dates .date.active{
     color: var(--primary-color);
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .dates .date.active:before{
@@ -727,25 +727,69 @@ position: absolute;
 
     .dates{
         position: absolute;
-        top: 43%;
+        top: 25%;
+        right: 0;
         display: flex;
-        /* justify-content: center; */
+        justify-content: space-between;
         align-items: center;
-        gap: 12px;
-        padding: .2rem;
-        overflow-x: scroll;
-        width: 90%;
-        background: rgba(255,255,255,0.8);
-        backdrop-filter: blur(2px);
+        flex-direction: column;
+        gap: 6px;
+        overflow-y: scroll;
+        width: 10%;
+        height: 20vh;
+        border: 2px solid var(--primary-color);
+        border-radius: 5px;
+        /* transform: rotate(90deg); */
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
     }
 
 }
 
+ @media screen and (max-width:610px) {
+    .places img{
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .places{
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        position: relative;
+     }
+
+     .dates{
+        width: 15%;
+     }
+     .dates .date{
+        font-size: 15px;
+    }
+
+     .dates .date.active{
+        font-size: 16px;
+    }
+} 
+
 
 @media screen and (max-width: 462px) {
-    .dates{
-        top: 36%;
+
+    .places img{
+        width: 100%;
+        max-width: 300px;
+        margin-left: -10%;
     }
+
+    /* .dates{
+        top: 36%;
+    } */
+
+    /* .dates{
+        position: absolute;
+        top: 30%;
+        right: -33%;
+        width: 80%;
+    } */
 
     .places .right-place{
         margin-top: 10%;
@@ -772,16 +816,16 @@ position: absolute;
 
 @media screen and (max-width: 320px) {
 
-    .dates{
+    /* .dates{
         top: 30%;
     }
 
     .dates .date{
         font-size: 12px;
-    }
+    } */
 
     .dates .date.active{
-        font-size: 20px;
+        font-size: 16px;
     }
 
 }
