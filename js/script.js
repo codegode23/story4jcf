@@ -85,6 +85,19 @@ const navbar = document.querySelector(".nav");
     };
 
 
+//fourthgallery popup
+    const pic5 = document.querySelector("#gallery5");
+    const pictures5 = document.querySelector(".pictures5");
+
+    pic5.addEventListener('click', () =>{
+    pictures5.classList.toggle('active');
+    });
+
+    document.querySelector('.close4').onclick = () =>{
+        pictures5.classList.remove('active');
+    };
+
+
 //Video popup
         // let video = document.querySelectorAll('video');
 
