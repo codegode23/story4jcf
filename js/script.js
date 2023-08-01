@@ -93,7 +93,7 @@ const navbar = document.querySelector(".nav");
     pictures5.classList.toggle('active');
     });
 
-    document.querySelector('.close4').onclick = () =>{
+    document.querySelector('.close5').onclick = () =>{
         pictures5.classList.remove('active');
     };
 
