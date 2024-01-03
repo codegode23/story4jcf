@@ -23,6 +23,10 @@ const scroll = new SmoothScroll('a[href*="#"]', {
 
 const menu = document.querySelector("#menu");
 const navbar = document.querySelector(".nav");
+const lclose = document.querySelector(".nav-close");
+const lclose1 = document.querySelector(".nav-close1");
+const lclose2 = document.querySelector(".nav-close2");
+const lclose3 = document.querySelector(".nav-close3");
 
 
     menu.addEventListener('click', () =>{
@@ -30,10 +34,26 @@ const navbar = document.querySelector(".nav");
     navbar.classList.toggle('active');
     });
 
-//    document.getElementsByClassName('.nav-close').onclick = () => {
-//     navbar.classList.toggle('active');
-//     menu.classList.toggle('bx-x');
-//    };
+
+   lclose.addEventListener('click', () => {
+    navbar.classList.toggle('active');
+    menu.classList.toggle('bx-x');
+   })
+
+   lclose1.addEventListener('click', () => {
+    navbar.classList.toggle('active');
+    menu.classList.toggle('bx-x');
+   })
+
+   lclose2.addEventListener('click', () => {
+    navbar.classList.toggle('active');
+    menu.classList.toggle('bx-x');
+   })
+
+   lclose3.addEventListener('click', () => {
+    navbar.classList.toggle('active');
+    menu.classList.toggle('bx-x');
+   })
 
 
 //first gallery popup
