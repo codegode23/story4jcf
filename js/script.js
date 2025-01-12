@@ -122,12 +122,12 @@ const lclose3 = document.querySelector(".nav-close3");
     const pic6 = document.querySelector("#gallery6");
     const pictures6 = document.querySelector(".pictures6");
 
-    pic5.addEventListener('click', () =>{
-    pictures5.classList.toggle('active');
+    pic6.addEventListener('click', () =>{
+    pictures6.classList.toggle('active');
     });
 
-    document.querySelector('.close5').onclick = () =>{
-        pictures5.classList.remove('active');
+    document.querySelector('.close6').onclick = () =>{
+        pictures6.classList.remove('active');
     };
 
 
