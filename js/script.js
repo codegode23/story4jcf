@@ -105,9 +105,22 @@ const lclose3 = document.querySelector(".nav-close3");
     };
 
 
-//fourthgallery popup
+//fifthgallery popup
     const pic5 = document.querySelector("#gallery5");
     const pictures5 = document.querySelector(".pictures5");
+
+    pic5.addEventListener('click', () =>{
+    pictures5.classList.toggle('active');
+    });
+
+    document.querySelector('.close5').onclick = () =>{
+        pictures5.classList.remove('active');
+    };
+
+
+//sixthgallery popup
+    const pic6 = document.querySelector("#gallery6");
+    const pictures6 = document.querySelector(".pictures6");
 
     pic5.addEventListener('click', () =>{
     pictures5.classList.toggle('active');

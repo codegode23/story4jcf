@@ -846,7 +846,8 @@ position: absolute;
 .pictures2 .close2,
 .pictures3 .close3,
 .pictures4 .close4,
-.pictures5 .close5{
+.pictures5 .close5,
+.pictures6 .close6{
     position: absolute;
     top: 2px;
     right: 0;
@@ -869,7 +870,8 @@ position: absolute;
 .pictures2 .close2:hover,
 .pictures3 .close3:hover,
 .pictures4 .close4:hover,
-.pictures5 .close5:hover
+.pictures5 .close5:hover,
+.pictures6 .close6:hover
 {
     color: var(--secondary-color);
     background: var(--primary-color);
@@ -879,7 +881,8 @@ position: absolute;
 .pictures2.active,
 .pictures3.active,
 .pictures4.active,
-.pictures5.active
+.pictures5.active,
+.pictures6.active
 {
     position: fixed;
     display: flex;
@@ -907,7 +910,8 @@ position: absolute;
 .pictures2,
 .pictures3,
 .pictures4,
-.pictures5
+.pictures5,
+.pictures6
 {
     display: none;
 }
@@ -923,7 +927,8 @@ position: absolute;
 .pictures2 .pics2-gallery,
 .pictures3 .pics3-gallery,
 .pictures4 .pics4-gallery,
-.pictures5 .pics5-gallery
+.pictures5 .pics5-gallery,
+.pictures6 .pics6-gallery
 {
     display: flex;
     justify-content: center;
@@ -938,7 +943,8 @@ position: absolute;
 .pictures2 .image,
 .pictures3 .image,
 .pictures4 .image,
-.pictures5 .image
+.pictures5 .image,
+.pictures6 .image
 {
     cursor: pointer;
 }
@@ -948,7 +954,8 @@ position: absolute;
 .pictures2 .image img,
 .pictures3 .image img,
 .pictures4 .image img,
-.pictures5 .image img
+.pictures5 .image img,
+.pictures6 .image img
 {
      height: 100%;
     width: 100%;
@@ -1000,7 +1007,8 @@ position: absolute;
         .pictures2 .image img,
         .pictures3 .image img,
         .pictures4 .image img,
-        .pictures5 .image img
+        .pictures5 .image img,
+        .pictures6 .image img
         {
         width: 100%;
         max-width: 40vw;
@@ -1024,7 +1032,8 @@ position: absolute;
     .pictures2 .image img,
     .pictures3 .image img,
     .pictures4 .image img,
-    .pictures5 .image img
+    .pictures5 .image img,
+    .pictures6 .image img
     {
         width: 100%;
         max-width: 45vw;
