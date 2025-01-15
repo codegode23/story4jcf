@@ -1407,6 +1407,74 @@ position: absolute;
 
 
 
+
+
+
+/*Stats*/
+#stats{
+    width: 100%;
+    border: 1px solid black;
+    display: none;
+}
+
+.stats-container{
+    padding: 1rem;
+    border-radius: 14px;
+    background: #fff;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.stats-box{
+    max-width: 240px;
+    flex: 1 1 50rem;
+    margin-top: 3%;
+    padding: .8rem;
+    text-align: center;
+    border-radius: .3rem;
+    background: #fff;
+    cursor: pointer;
+    border: .2rem solid var(--magenta);
+}
+
+.stats-box:hover{
+    box-shadow: 0 .3rem 2rem rgba(9, 36, 68, 0.2);
+}
+
+.stats-box h1{
+    color: #263964;
+}
+
+.stats-box h1 span{
+    color: #ff5d8f;
+}
+
+
+.stats-box p{
+    font-size: 1.3rem;
+    color: #333;
+    padding: 1rem 0;
+}
+
+@media screen and (max-width: 560px) {
+    .stats-container{
+        margin-top: -28%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .stats-container{
+        margin-top: -40%;
+    }
+}
+
+
+
+
+
+
 /*Footer/Contact Us Section begins*/
 
 #contact{
